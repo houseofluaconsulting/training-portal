@@ -55,7 +55,7 @@
         </span>
       </button>
       <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
+        <ul class="navbar-nav navbar-nav-hover ms-auto" id="navigation-content" style="display:none">
           <li class="nav-item dropdown dropdown-hover mx-1">
             <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
               aria-expanded="false" href="./faq.html">
@@ -205,155 +205,113 @@
     </div>
   </nav>
   <!-- End Navbar -->
-  <!-- End Navbar -->
-  <!-- -------- START HEADER 7 w/ text and video ------- -->
-  <header class="bg-gradient-dark">
+
+  <!-- <header class="bg-gradient-dark">
     <div class="page-header min-vh-55" style="background-image: url('../assets/img/bg9.jpg');">
       <span class="mask bg-gradient-dark opacity-6"></span>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Work with <span class="text-white" id="typed"></span></h1>
-            <div id="typed-strings">
-              <h1>an exceptional agency</h1>
-              <h1>experienced mentors</h1>
-              <h1>a special team</h1>
+      
+    </div>
+  </header> -->
+
+  
+  <div class="page-header align-items-start min-vh-100" id="password-prompt"
+    style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');"
+    loading="lazy">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="container my-auto">
+      <div class="row">
+        </div>
+        <div class="col-lg-4 col-md-8 col-12 mx-auto">
+          <div class="card z-index-0 fadeIn3 fadeInBottom">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
+                <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Welcome</h4>
+              </div>
             </div>
-            <p class="lead mb-4 text-white opacity-8">Learn how our agents are earning $250K+/year remotely — with real leads and support.</p>
+            <div class="card-body">
+              <form role="form" class="text-start">
+                <div class="input-group input-group-outline mb-3">
+                  <label class="form-label">Password</label>
+                  <input type="password" id="password-input" class="form-control">
+                </div>
+                <div class="text-center text-xs">
+                  <span id="error-message" style="color: red; display: none;">Incorrect password. Please try
+                    again.</span>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn bg-gradient-dark w-30 my-4 mb-2" onclick="checkPassword()">Sign
+                    in</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-  <!-- -------- END HEADER 7 w/ text and video ------- -->
-  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
-    <!-- Section with four info areas left & one card right with image and waves -->
-    <section class="py-7">
+  </div>
+  <div class="page-header align-items-start min-vh-100" id="protected-content"
+    style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80'); display: none;"
+    loading="lazy">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <section class="pt-5 mt-10">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8">
-            <div class="row justify-content-start">
-              <div class="col-md-6">
-                <div class="info">
-                  <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">target</i>
-                  <h5> Mentorship / Why It Matters</h5>
-                  <p>We don’t just throw you in and hope you figure it out. Every new agent is paired with experienced mentors who walk you through the sales process, show you how to close effectively, and support your growth every step of the way. This hands-on coaching dramatically shortens the learning curve — and increases your income potential.  The average full-time agent is earning over 10k/mo by their second month.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info">
-                  <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">payments</i>
-                  <h5> Quality of Leads</h5>
-                  <p>We invest heavily in generating high-quality, exclusive leads so you can spend less time chasing and more time helping real families. These aren’t recycled names — they’re people actively looking for coverage and ready to talk. When you combine great leads with the right training, success gets a lot easier.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-start mt-4">
-              <div class="col-md-6">
-                <div class="info">
-                  <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">verified_user</i>
-                  <h5>Relationship with Top Carriers</h5>
-                  <p>Our agency is partnered with some of the strongest and most trusted life insurance carriers in the country. This gives you access to competitive products, fast approvals, and coverage options that truly meet clients’ needs. The better your carriers, the easier it is to earn trust — and close more sales.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info">
-                  <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">paid</i>
-                  <h5>Uncapped Earning Potential</h5>
-                  <p>Most agencies start your compensation at around 40-50% of Annual Premium.  We start our agents at 80%, 2x the industry average. Your earnings are directly tied to your effort, skill, and how many families you help. Whether you want to make $5K/month or build a multiple 6-figure income, the system and support are here — you just bring the work ethic.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <div class="card-header p-0 position-relative mt-2 mx-2 z-index-2">
-                <a class="d-block blur-shadow-image">
-                  <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img-colored-shadow" class="img-fluid border-radius-lg">
-                </a>
-              </div>
-              <div class="card-body text-center">
-                <h5 class="font-weight-normal">
-                  <a href="javascript:;">Work with Us!</a>
-                </h5>
-                <p class="mb-0">
-                  Join our team.
-                </p>
-                <a type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3" href="./contact-us.html" target="_blank">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Section with four info areas left & one card right with image and waves -->
-    <!-- -------- START Features w/ pattern background & stats & rocket -------- -->
-    <section class="pb-5 position-relative bg-gradient-dark mx-n3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 text-start mb-5 mt-5">
-            <h3 class="text-white z-index-1 position-relative">Our Team</h3>
-            <p class="text-white opacity-8 mb-0">Meet the people behind our team.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-4">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="../assets/img/ben.jpg" alt="image">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 py-3">
+            <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 pb-0">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-4 ms-auto me-auto p-lg-4 mt-lg-0 mt-4">
+                    <div class="rotating-card-container">
+                      <div class="card card-rotate card-background shadow-dark mt-md-0 mt-5">
+                        <div class="front front-background"
+                          style="background-image: url(https://images.unsplash.com/photo-1578926375605-eaf7559b1458?q=80&w=800&auto=format&fit=crop); background-size: cover;">
+                          <div class="card-body py-7 text-center">
+                            <h4 class="text-white font-weight-bolder">Additional <br> Questions?</h4>
+                            <p class="text-white">If you can't find the answers you are looking for...</p>
+                          </div>
+                        </div>
+                        <div class="back back-background"
+                          style="background-image: url(https://images.unsplash.com/photo-1498889444388-e67ea62c464b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1365&q=80); background-size: cover;">
+                          <div class="card-body pt-7 text-center">
+                            <h3 class="text-white">Reach Out!</h3>
+                            <a href="./contact-us.html" target="_blank"
+                              class="btn btn-white btn-sm w-50 mx-auto mt-3">Contact Us</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Benjamin Garrigan</h5>
-                    <h6 class="text-info">Agency Lead</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-lg-4 mt-5">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <!-- <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="../assets/img/bruce-mars.jpg" alt="image">
-                    </div> -->
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Allie Goodman</h5>
-                    <h6 class="text-info">Operations Manager</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-lg-6 col-12">
-            <div class="card card-profile mt-4">
-              <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 mt-n5">
-                  <a href="javascript:;">
-                    <div class="p-3 pe-md-0">
-                      <img class="w-100 border-radius-md shadow-lg" src="../assets/img/rain.jpg" alt="image">
+                  <div class="col-lg-7 ms-auto">
+                    <div class="row justify-content-start">
+                      <div class="col-md-6">
+                        <div class="info">
+                          <i class="material-symbols-rounded text-success text-3xl">help</i>
+                          <h5 class="font-weight-bolder mt-3">Frequently Asked Questions</h5>
+                          <p class="pe-5">This page is updated frequently. Feel free to utilize the <a style="color:DodgerBlue;" href="./faq.html" target="_blank"><b>FAQ</b></a> page as questions pop up.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="info">
+                          <i class="material-symbols-rounded text-success text-3xl">school</i>
+                          <h5 class="font-weight-bolder mt-3">Training Resources</h5>
+                          <p class="pe-3">Add Copy</p>
+                        </div>
+                      </div>
                     </div>
-                  </a>
-                </div>
-                <div class="col-lg-8 col-md-6 col-12 my-auto">
-                  <div class="card-body ps-lg-0">
-                    <h5 class="mb-0">Rain Lamoreaux</h5>
-                    <h6 class="text-info">Agent Success Manager</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                    <div class="row justify-content-start mt-5">
+                      <div class="col-md-6 mt-3">
+                        <i class="material-symbols-rounded text-success text-3xl">add_circle</i>
+                        <h5 class="font-weight-bolder mt-3">New Hire Resources</h5>
+                        <p class="pe-5">Add Copy</p>
+                      </div>
+                      <div class="col-md-6 mt-3">
+                        <div class="info">
+                          <i class="material-symbols-rounded text-success text-3xl">article</i>
+                          <h5 class="font-weight-bolder mt-3">Agent Resources</h5>
+                          <p class="pe-3">Add Copy</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -362,7 +320,6 @@
         </div>
       </div>
     </section>
-    <!-- -------- END Features w/ pattern background & stats & rocket -------- -->
   </div>
 
   <!-- -------- START FOOTER 5 w/ DARK BACKGROUND ------- -->
@@ -445,6 +402,26 @@
         startDelay: 500,
         loop: true
       });
+    }
+  </script>
+  <script>
+    function checkPassword() {
+      const passwordInput = document.getElementById("password-input");
+      const password = passwordInput.value;
+      const errorMessage = document.getElementById("error-message");
+      const passwordPrompt = document.getElementById("password-prompt");
+      const protectedContent = document.getElementById("protected-content");
+      const navContent = document.getElementById("navigation-content");
+
+      if (password === "password") {
+        passwordPrompt.style.display = "none";
+        protectedContent.style.display = "block";
+        navContent.style.display = "flex";
+
+      } else {
+        errorMessage.style.display = "block";
+        passwordInput.value = "";
+      }
     }
   </script>
 </body>
