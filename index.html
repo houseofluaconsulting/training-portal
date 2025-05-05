@@ -12,6 +12,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,199 +34,48 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.1.0" rel="stylesheet" />
 </head>
-<body class="presentation-page bg-gray-100">
-  <!-- Navbar -->
-  <div class="container position-sticky z-index-sticky top-0">
-    <div class="row">
-      <div class="col-12">
-        <nav
-          class="navbar navbar-expand-lg  blur border-radius-lg top-0 z-index-fixed shadow position-absolute my-3 py-2 px-2 start-0 end-0 mx-2">
-          <div class="container-fluid px-0">
-            <a class="navbar-brand text-sm font-weight-bolder ms-sm-2  d-none d-md-block" href=" ./index.html "
-              rel="tooltip" data-placement="bottom">
-              <i class="material-symbols-rounded opacity-6 me-2 text-md">landscape</i>
-              Red Rock Financial Group
-            </a>
-            <a class="navbar-brand font-weight-bolder ms-sm-3  d-block d-md-none" href=" ./index.html" rel="tooltip"
-              title="Designed and Coded by Creative Tim" data-placement="bottom">
 
+<body class="presentation-page bg-gray-100">
+  <!-- Navbar Transparent -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+    <div class="container">
+      <a class="navbar-brand font-weight-bolder text-sm  text-white  d-none d-md-block" href=" ./index.html "
+        rel="tooltip" data-placement="bottom">
+        <i class="material-symbols-rounded opacity-6 me-2 text-md">landscape</i>
+        Red Rock Financial Group
+      </a>
+      </a>
+
+
+      <div class=" mb-0 ms-auto d-lg-none d-block"></div>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <li class="nav-item dropdown dropdown-hover mx-1">
+            <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
+              aria-expanded="false" href="./training-portal/home.html" target="_blank">
               <i class="material-symbols-rounded opacity-6 me-2 text-md">school</i>
               Training Portal
             </a>
-            <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon mt-2">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-              <ul class="navbar-nav navbar-nav-hover ms-auto">
-                <li class="nav-item dropdown dropdown-hover mx-1">
-                  <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
-                    aria-expanded="false" href="./training-portal/faq.html">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">help</i>
-                    FAQ
-                  </a>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-1">
-                  <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
-                    id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">school</i>
-                    Training Resources
-                    <img src=" ./assets/img/down-arrow-dark.svg  " alt="down-arrow"
-                      class="arrow ms-2 d-lg-block d-none">
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
-                      class="arrow ms-1 d-lg-none d-block ms-auto">
-                  </a>
-                  <div
-                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-                    aria-labelledby="dropdownMenuAgentResources">
-                    <div class="d-none d-lg-block">
-                      <ul class="list-group">
-                        <ul class="list-group">
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href="./training-portal/writing-numbers.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Writing Numbers</h6>
-                              <span class="text-xs">Ben's Writing Numbers</span>
-                            </a>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md" href="./training-portal/scripts.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Scripts</h6>
-                            </a>
-                          </li>
-                        </ul>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-1">
-                  <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
-                    id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">add_circle</i>
-                    New Hire Resources
-                    <img src=" ./assets/img/down-arrow-dark.svg  " alt="down-arrow"
-                      class="arrow ms-2 d-lg-block d-none">
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
-                      class="arrow ms-1 d-lg-none d-block ms-auto">
-                  </a>
-                  <div
-                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-                    aria-labelledby="dropdownMenuAgentResources">
-                    <div class="d-none d-lg-block">
-                      <ul class="list-group">
-                        <ul class="list-group">
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href="./training-portal/new-agent-checklist.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                New Agent Checklist</h6>
-                            </a>
-                          </li>
-                        </ul>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="nav-item dropdown dropdown-hover mx-1">
-                  <a role="button" class="font-weight-semibold nav-link ps-2 d-flex cursor-pointer align-items-center"
-                    id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="material-symbols-rounded opacity-6 me-2 text-md">article</i>
-                    Agent Resources
-                    <img src=" ./assets/img/down-arrow-dark.svg  " alt="down-arrow"
-                      class="arrow ms-2 d-lg-block d-none">
-                    <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
-                      class="arrow ms-1 d-lg-none d-block ms-auto">
-                  </a>
-                  <div
-                    class="dropdown-menu dropdown-menu-end dropdown-menu-animation dropdown-md mt-0 mt-lg-3 p-3 border-radius-lg"
-                    aria-labelledby="dropdownMenuAgentResources">
-                    <div class="d-none d-lg-block">
-                      <ul class="list-group">
-                        <ul class="list-group">
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href="./training-portal/contracting.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Contracting Onboarding & Contract Submissions</h6>
-                              <span class="text-xs">HCMS, NLC, & SureLC Onboarding Guide</span>
-                            </a>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md" href="./training-portal/ringy.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Ringy Setup</h6>
-                            </a>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href="./training-portal/carrier-portal.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Carrier Portal Set-up & Financial Inventory</h6>
-                            </a>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md" href="./training-portal/hcms.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                HCMS Writing Numbers</h6>
-                              <span class="text-xs">How to add Carrier Writting Numbers to HCMS</span>
-                            </a>
-                          </li>
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md" href="./training-portal/licensing.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Licensing/Additional Licenses</h6>
-                              <span class="text-xs">How to Apply for a New/Additional State License (Add a State)</span>
-                            </a>
-                          </li>
-                          <!-- <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href=" https://www.creative-tim.com/learning-lab/bootstrap/utilities/material-kit ">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                State Specifics</h6>
-                              <span class="text-xs">State Specific Information (Adding Licenses/Non-Residential)</span>
-                            </a>
-                          </li> -->
-                          <li class="nav-item list-group-item border-0 p-0">
-                            <a class="dropdown-item py-2 ps-3 border-radius-md"
-                              href="./training-portal/carrier-specifics.html">
-                              <h6
-                                class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
-                                Carrier Specifics</h6>
-                              <span class="text-xs">Carrier Specifics - Contracting Information</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- End Navbar -->
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+  <!-- End Navbar -->
+  </div>
+  </div>
   </div>
   <!-- -------- START HEADER 7 w/ text and video ------- -->
   <header class="bg-gradient-dark">
-    <div class="page-header min-vh-55" style="background-image: url('./assets/img/bg9.jpg');">
+    <div class="page-header min-vh-55" style="background-image: url('./assets/img/rr-bg3.jpg');">
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
         <div class="row justify-content-center">
@@ -236,7 +86,8 @@
               <h1>experienced mentors</h1>
               <h1>a special team</h1>
             </div>
-            <p class="lead mb-4 text-white opacity-8">Learn how our agents are earning $250K+/year remotely — with real leads and support.</p>
+            <p class="lead mb-4 text-white opacity-8">Learn how our agents are earning $250K+/year remotely — with real
+              leads and support.</p>
           </div>
         </div>
       </div>
@@ -254,14 +105,21 @@
                 <div class="info">
                   <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">target</i>
                   <h5> Mentorship / Why It Matters</h5>
-                  <p>We don’t just throw you in and hope you figure it out. Every new agent is paired with experienced mentors who walk you through the sales process, show you how to close effectively, and support your growth every step of the way. This hands-on coaching dramatically shortens the learning curve — and increases your income potential.  The average full-time agent is earning over 10k/mo by their second month.</p>
+                  <p>We don’t just throw you in and hope you figure it out. Every new agent is paired with experienced
+                    mentors who walk you through the sales process, show you how to close effectively, and support your
+                    growth every step of the way. This hands-on coaching dramatically shortens the learning curve — and
+                    increases your income potential. The average full-time agent is earning over 10k/mo by their second
+                    month.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info">
                   <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">payments</i>
                   <h5> Quality of Leads</h5>
-                  <p>We invest heavily in generating high-quality, exclusive leads so you can spend less time chasing and more time helping real families. These aren’t recycled names — they’re people actively looking for coverage and ready to talk. When you combine great leads with the right training, success gets a lot easier.</p>
+                  <p>We invest heavily in generating high-quality, exclusive leads so you can spend less time chasing
+                    and more time helping real families. These aren’t recycled names — they’re people actively looking
+                    for coverage and ready to talk. When you combine great leads with the right training, success gets a
+                    lot easier.</p>
                 </div>
               </div>
             </div>
@@ -270,14 +128,20 @@
                 <div class="info">
                   <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">verified_user</i>
                   <h5>Relationship with Top Carriers</h5>
-                  <p>Our agency is partnered with some of the strongest and most trusted life insurance carriers in the country. This gives you access to competitive products, fast approvals, and coverage options that truly meet clients’ needs. The better your carriers, the easier it is to earn trust — and close more sales.</p>
+                  <p>Our agency is partnered with some of the strongest and most trusted life insurance carriers in the
+                    country. This gives you access to competitive products, fast approvals, and coverage options that
+                    truly meet clients’ needs. The better your carriers, the easier it is to earn trust — and close more
+                    sales.</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info">
                   <i class="material-symbols-rounded text-3xl text-gradient text-info mb-3">paid</i>
                   <h5>Uncapped Earning Potential</h5>
-                  <p>Most agencies start your compensation at around 40-50% of Annual Premium.  We start our agents at 80%, 2x the industry average. Your earnings are directly tied to your effort, skill, and how many families you help. Whether you want to make $5K/month or build a multiple 6-figure income, the system and support are here — you just bring the work ethic.</p>
+                  <p>Most agencies start your compensation at around 40-50% of Annual Premium. We start our agents at
+                    80%, 2x the industry average. Your earnings are directly tied to your effort, skill, and how many
+                    families you help. Whether you want to make $5K/month or build a multiple 6-figure income, the
+                    system and support are here — you just bring the work ethic.</p>
                 </div>
               </div>
             </div>
@@ -286,7 +150,9 @@
             <div class="card">
               <div class="card-header p-0 position-relative mt-2 mx-2 z-index-2">
                 <a class="d-block blur-shadow-image">
-                  <img src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="img-colored-shadow" class="img-fluid border-radius-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1544717302-de2939b7ef71?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    alt="img-colored-shadow" class="img-fluid border-radius-lg">
                 </a>
               </div>
               <div class="card-body text-center">
@@ -296,7 +162,8 @@
                 <p class="mb-0">
                   Join our team.
                 </p>
-                <a type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3" href="./contact-us.html" target="_blank">Contact Us</a>
+                <a type="button" class="btn bg-gradient-info btn-sm mb-0 mt-3" href="./contact-us.html"
+                  target="_blank">Contact Us</a>
               </div>
             </div>
           </div>
@@ -328,7 +195,8 @@
                   <div class="card-body ps-lg-0">
                     <h5 class="mb-0">Benjamin Garrigan</h5>
                     <h6 class="text-info">Agency Lead</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -348,7 +216,8 @@
                   <div class="card-body ps-lg-0">
                     <h5 class="mb-0">Allie Goodman</h5>
                     <h6 class="text-info">Operations Manager</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -370,7 +239,8 @@
                   <div class="card-body ps-lg-0">
                     <h5 class="mb-0">Rain Lamoreaux</h5>
                     <h6 class="text-info">Agent Success Manager</h6>
-                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.</p>
+                    <p class="mb-0">Artist is a term applied to a person who engages in an activity deemed to be an art.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -389,7 +259,7 @@
             <h6 class="text-sm">Agency</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="./training-portal/about-us.html" target="_blank">
+                <a class="nav-link" href="./about-us.html" target="_blank">
                   About Us
                 </a>
               </li>
@@ -401,7 +271,7 @@
             <h6 class="text-sm">Help & Support</h6>
             <ul class="flex-column ms-n3 nav">
               <li class="nav-item">
-                <a class="nav-link" href="./training-portal/contact-us.html" target="_blank">
+                <a class="nav-link" href="./contact-us.html" target="_blank">
                   Contact Us
                 </a>
               </li>
@@ -495,22 +365,6 @@
       };
     }
   </script>
-  <script>
-    function checkPassword() {
-      const passwordInput = document.getElementById("password-input");
-      const password = passwordInput.value;
-      const errorMessage = document.getElementById("error-message");
-      const passwordPrompt = document.getElementById("password-prompt");
-      const protectedContent = document.getElementById("protected-content");
-
-      if (password === "yourPassword") {
-        passwordPrompt.style.display = "none";
-        protectedContent.style.display = "block";
-      } else {
-        errorMessage.style.display = "block";
-        passwordInput.value = "";
-      }
-    }
-  </script>
 </body>
+
 </html>
