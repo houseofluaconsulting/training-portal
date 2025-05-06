@@ -137,14 +137,14 @@
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
                         <label>Full Name</label>
-                        <input type="text" class="form-control" placeholder="Full Name">
+                        <input type="text" class="form-control" placeholder="Full Name" id="name">
                         <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
                       </div>
                     </div>
                     <div class="col-md-6 ps-md-2">
                       <div class="input-group input-group-static mb-4">
                         <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Email" id="email">
                         <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
                       </div>
                     </div>
@@ -245,6 +245,41 @@
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="./assets/js/material-kit-pro.min.js?v=3.1.0" type="text/javascript"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#contact-form").submit(function (event) {
+        event.preventDefault();
+
+        var formData = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          message: $("#message").val()
+        };
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev",
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#contact-form").hide();
+              $("#successMessage").show();
+            } else {
+              $("#errorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#errorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 

@@ -233,7 +233,7 @@
                   again.</span>
               </div>
               <div class="text-center">
-                <button type="button" class="btn bg-gradient-dark w-30 my-4 mb-2" onclick="checkPassword()">Sign
+                <button type="button" class="btn bg-gradient-dark w-30 my-4 mb-2" id="sign-in-btn" onclick="checkPassword()">Sign
                   in</button>
               </div>
             </form>
@@ -402,6 +402,15 @@
         passwordInput.value = "";
       }
     }
+
+    var input = document.getElementById("password-input");
+    input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("sign-in-btn").click();
+      }
+    });
+
   </script>
 </body>
 
