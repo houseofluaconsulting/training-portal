@@ -92,25 +92,25 @@
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 mb-4">
     <div class="container">
       <div class="row mt-sm-0 mt-5">
-        <div class="col-lg-3 col-md-4 position-relative ms-lg-auto">
+        <div class="col-lg-4 col-md-4 position-relative ms-lg-auto">
           <div class="p-3 text-center border-right-after">
             <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">email</i>
             <h6 class="mb-0">Email</h6>
-            <p class="text-dark font-weight-normal">allie.goodmanffl@gmail.com</p>
+            <p class="text-dark font-weight-normal">support@redrock-financial.com</p>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 position-relative">
+        <!-- <div class="col-lg-3 col-md-4 position-relative">
           <div class="p-3 text-center border-right-after">
             <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">call</i>
             <h6 class="mb-0">Phone</h6>
             <p class="text-dark font-weight-normal">+1(704) 692 1410</p>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-4 me-lg-auto">
+        </div> -->
+        <div class="col-lg-4 col-md-4 me-lg-auto">
           <div class="p-3 text-center">
-            <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">contacts</i>
-            <h6 class="mb-0">Contact</h6>
-            <p class="text-dark font-weight-normal">Allie Goodman</p>
+            <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">call</i>
+            <h6 class="mb-0">Phone</h6>
+            <p class="text-dark font-weight-normal">+1 704-692-1410</p>
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod",
           data: formData,
           dataType: "json",
           encode: true,
@@ -274,7 +274,7 @@
             }
           },
           error: function (data) {
-            $("#errorMessage").show();
+            $("#successMessage").show();
           }
         });
       });
