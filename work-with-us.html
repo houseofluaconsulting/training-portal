@@ -81,50 +81,22 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center mx-auto">
-            <h2 class="text-white mb-3">How can we help you?</h2>
-            <p class="lead text-white mb-6">We always want to hear from you! Let us know if there is anything that we
-              can help you with.</p>
+            <h2 class="text-white mb-3">Join Our Team</h2>
+            <p class="lead text-white mb-6">Set up a call with our hiring team to learn about joining our team.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 mb-4">
-    <div class="container">
-      <div class="row mt-sm-0 mt-5">
-        <div class="col-lg-4 col-md-4 position-relative ms-lg-auto">
-          <div class="p-3 text-center border-right-after">
-            <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">email</i>
-            <h6 class="mb-0">Email</h6>
-            <p class="text-dark font-weight-normal">support@redrock-financial.com</p>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-4 position-relative">
-          <div class="p-3 text-center border-right-after">
-            <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">call</i>
-            <h6 class="mb-0">Phone</h6>
-            <p class="text-dark font-weight-normal">+1(704) 692 1410</p>
-          </div>
-        </div> -->
-        <div class="col-lg-4 col-md-4 me-lg-auto">
-          <div class="p-3 text-center">
-            <i class="material-symbols-rounded text-gradient text-info text-5xl mb-3">call</i>
-            <h6 class="mb-0">Phone</h6>
-            <p class="text-dark font-weight-normal">+1 704-692-1410</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <section class="py-md-7 py-5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8 col-10 mx-auto text-center">
-            <div class="mb-md-5">
-              <h3>Contact us</h3>
-              <p>
-                For further questions, please email us
-                or contact using our contact form.
-              </p>
+            <div class="mb-md-5 mt-n6">
+              <h5>
+                Tell us a little bit about yourself and we will reach out to you!
+              </h5>
             </div>
           </div>
         </div>
@@ -136,40 +108,91 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="input-group input-group-static mb-4">
-                        <label>Full Name</label>
-                        <input type="text" class="form-control" placeholder="Full Name" id="name" required>
+                        <label>First Name <span class="text-xs">(required)</span></label>
+                        <input type="text" class="form-control" placeholder="First Name" id="first_name" required>
                         <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
                       </div>
                     </div>
                     <div class="col-md-6 ps-md-2">
                       <div class="input-group input-group-static mb-4">
-                        <label>Email</label>
+                        <label>Last Name <span class="text-xs">(required)</span></label>
+                        <input type="text" class="form-control" placeholder="Last Name" id="last_name" required>
+                        <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group input-group-static mb-4">
+                        <label>Email <span class="text-xs">(required)</span></label>
                         <input type="email" class="form-control" placeholder="Email" id="email" required>
                         <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 ps-md-2">
                       <div class="input-group input-group-static mb-4">
-                        <label>Phone Number</label>
+                        <label>Phone Number <span class="text-xs">(required)</span></label>
                         <input class="form-control" placeholder="Phone Number" id="phone" required>
                         <span class="input-group-text"><i class="material-symbols-rounded">phone</i></span>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group mb-4 mt-md-0 mt-4">
+                  <div class="row mt-5">
+                    <div class="col-md-6 mt-25">
+                      <div class="input-group input-group-static">
+                        <label>Employment Status <span class="text-xs">(required)</span></label>
+                        <select class="form-control" name="employment" id="employment">
+                          <option value="Currently Employed" selected>Currently Employed</option>
+                          <option value="Actively Looking">Actively Looking</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 ps-md-2">
+                      <div class="input-group input-group-static mb-4">
+                        <!-- <label>Industry Experience</label> -->
+                        <span class="text-xsm">What industry are you currently working in, or have you worked in previously?</span>
+                        <input class="form-control" placeholder="Industry" id="industry">
+                        <span class="input-group-text"><i class="material-symbols-rounded">work</i></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="input-group input-group-static">
+                        <label>How did you hear about us? <span class="text-xs">(required)</span></label>
+                        <select class="form-control" name="hearaboutus" id="hearaboutus">
+                          <option value="Referral/Other Agent" selected>Referral/Other Agent</option>
+                          <option value="Google">Google</option>
+                          <option value="Social Media">Social Media</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 mt-3">
+                      <div class="input-group input-group-static mb-4">
+                        <label>LinkedIn</label>
+                        <input class="form-control" placeholder="LinkedIn" id="linkedin">
+                        <span class="input-group-text"><i class="material-symbols-rounded">language</i></span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group mb-4 mt-3">
                     <div class="input-group input-group-static mb-4">
-                      <label>What can we help you?</label>
+                      <label>About You</label>
                       <textarea name="message" class="form-control" id="message" rows="6"
-                        placeholder="Describe your problem in at least 250 characters"></textarea required>
+                        placeholder="Tell us more about you..."></textarea>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-md-12 text-center">
                       <button type="submit" class="btn bg-gradient-info mt-4">Send Message</button>
                       <div id="successMessage" style="display:none; color:green;">
-                        Thank you! Your message has been sent.
+                        Thank you, our team will reach out to you shortly!
                       </div>
                       <div id="errorMessage" style="display:none; color:red;">
                         Oops! Something went wrong. Please try again later.
@@ -273,18 +296,24 @@
         event.preventDefault();
 
         var formData = {
-          name: $("#name").val(),
+          first_name: $("#first_name").val(),
+          last_name: $("#last_name").val(),
           email: $("#email").val(),
-          message: $("#message").val(),
-          phone: $("#phone").val()
+          phone: $("#phone").val(),
+          employment: $("#employment").val(),
+          industry: $("#industry").val(),
+          hearaboutus: $("#hearaboutus").val(),
+          linkedin: $("#linkedin").val(),
+          message: $("#message").val()
         };
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/support",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/hiring",
           data: formData,
           dataType: "json",
           encode: true,
+          crossDomain: true,
           success: function (data) {
             if (data.success) {
               $("#successMessage").show();
@@ -298,6 +327,25 @@
         });
       });
     });
+  </script>
+
+  <script src="./assets/js/plugins/choices.min.js"></script>
+  <script>
+    if (document.getElementById("employment-button")) {
+      var element = document.getElementById("employment-button");
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    }
+
+    if (document.getElementById("hearaboutus-button")) {
+      var element = document.getElementById("hearaboutus-button");
+      const example = new Choices(element, {
+        searchEnabled: false
+      });
+    }
+
+
   </script>
 
 </body>
