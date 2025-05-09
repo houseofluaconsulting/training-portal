@@ -9859,6 +9859,10 @@ fieldset:disabled .btn {
   margin-top: 0.5rem !important;
 }
 
+.mt-25 {
+  margin-top: 0.80rem !important;
+}
+
 .mt-3 {
   margin-top: 1rem !important;
 }
