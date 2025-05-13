@@ -474,7 +474,7 @@
                         </div>
                       </div>
                       <div id="onboarding-licensing-form" class="card-body">
-                        <form id="state-licensing-course-form" method="post">
+                        <form id="state-licensing-form" method="post">
                           <div class="input-group input-group-static mb-4">
                             <label>Name</label>
                             <input type="name" class="form-control" id="state_licensing_name" required>
@@ -942,12 +942,214 @@
             $("#StudyCourseErrorMessage").show();
           }
         });
-
-        
-
       });
     });
   </script>
+  <script>
+    $(document).ready(function () {
+      $("#state-licensing-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "Passed State Licensing Exam",
+          name: $("#state_licensing_name").val(),
+          email: $("#state_licensing_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#StateLicensingSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#StateLicensingErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#StateLicensingErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#apply-state-license-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "Applied for State License",
+          name: $("#apply_state_license_name").val(),
+          email: $("#apply_state_license_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#ApplyStateLicenseSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#ApplyStateLicenseErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#ApplyStateLicenseErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#agent-resource-doc-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "Agent Resources Document is Shared",
+          name: $("#agent_resource_doc_name").val(),
+          email: $("#agent_resource_doc_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#AgentResourceDocSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#AgentResourceDocErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#AgentResourceDocErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#void-check-deposit-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "Void Check & Direct Deposit Form Obtained by Agent",
+          name: $("#void_check_deposit_name").val(),
+          email: $("#void_check_deposit_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#VoidCheckDepositSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#VoidCheckDepositErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#VoidCheckDepositErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#state-license-approve-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "State License Approved",
+          name: $("#state_license_approve_name").val(),
+          email: $("#state_license_approve_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#StateLicesnseApproveSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#StateLicesnseApproveErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#StateLicesnseApproveErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#nipr-license-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "NIPR Licensing Completed",
+          name: $("#nipr_license_name").val(),
+          email: $("#nipr_license_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#NIPRLicenseSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#NIPRLicenseErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#NIPRLicenseErrorMessage").show();
+          }
+        });
+      });
+    });
+  </script>
+
 
 </body>
 
