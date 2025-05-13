@@ -224,6 +224,14 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-12">
+          <div class="col-12 text-center align-items-center">
+            <div class="mb-5">
+              <h6>Note: Please use this page to notify your manager/admin by filling out the form for each task as they are completed.</h6>
+              <p>We recommend you keep your own list of tasks/progress, as progress on this page will refresh.</p>
+              
+            </div>
+          </div>
+          
           <h4>Onboarding/Licensing</h4>
           <div class="card">
             <div class="table-responsive">
@@ -404,10 +412,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row justify-content-center">
-        <div class="col-lg-12">
-        </div>
-      </div> -->
       <div class="container py-2">
         <div class="row mt-5">
           <div class="col-sm-3 col-6 mx-auto">
@@ -768,7 +772,10 @@
                     </td>
                     <td>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <!-- Button trigger modal -->
+                        <button class="form-check-input" data-bs-toggle="modal" data-bs-target="#HCMSAccountModal">
+                          <input class="form-check-input" type="checkbox" value="" id="HCMSAccountCheck">
+                        </button>
                       </div>
                     </td>
                   </tr>
@@ -786,7 +793,10 @@
                     </td>
                     <td>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <!-- Button trigger modal -->
+                        <button class="form-check-input" data-bs-toggle="modal" data-bs-target="#SureLCSuranebayTrainingModal">
+                          <input class="form-check-input" type="checkbox" value="" id="SureLCSuranebayTrainingCheck">
+                        </button>
                       </div>
                     </td>
                   </tr>
@@ -809,7 +819,10 @@
                     </td>
                     <td>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <!-- Button trigger modal -->
+                        <button class="form-check-input" data-bs-toggle="modal" data-bs-target="#NLCOnboardingModal">
+                          <input class="form-check-input" type="checkbox" value="" id="NLCOnboardingCheck">
+                        </button>
                       </div>
                     </td>
                   </tr>
@@ -828,12 +841,203 @@
                     </td>
                     <td>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <!-- Button trigger modal -->
+                        <button class="form-check-input" data-bs-toggle="modal" data-bs-target="#ContractingAgentNumbersModal">
+                          <input class="form-check-input" type="checkbox" value="" id="ContractingAgentNumbersCheck">
+                        </button>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-2">
+        <div class="row mt-5">
+          <div class="col-sm-3 col-6 mx-auto">
+            <!-- HCMS Account Set-up Modal -->
+            <div class="modal fade" id="HCMSAccountModal" tabindex="-1" aria-labelledby="HCMSAccountModal"
+              aria-hidden="true">
+              <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card bg-gray-200 shadow border-0 mb-0">
+                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                        <div class="bg-gradient-info shadow-info border-radius-lg py-3 pe-1 py-4 text-end">
+                          <button type="button" class="btn btn-link text-white my-1"
+                            data-bs-dismiss="modal">Close</button>
+                          <h4 class="font-weight-bolder text-white mt-1 mb-0 text-center ">Completed
+                            HCMS Account Set-up?</h4>
+                          <p class="mb-1 text-sm text-white text-center">Keep your Admin/Manager updated on your
+                            progress</p>
+                        </div>
+                      </div>
+                      <div id="contracting-form" class="card-body">
+                        <form id="hcms-account-form" method="post">
+                          <div class="input-group input-group-static mb-4">
+                            <label>Name</label>
+                            <input type="name" class="form-control" id="hcms_account_name" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
+                          </div>
+                          <div class="input-group input-group-static mb-4">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="hcms_account_email" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Mark as
+                              Completed</button>
+                          </div>
+                          <div id="HCMSAccountSuccessMessage" class="text-center" style="display:none; color:green;">
+                            Thank you for updating us!
+                          </div>
+                          <div id="HCMSAccountErrorMessage" style="display:none; color:red;">
+                            Oops! Something went wrong. Please try again later.
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- SureLC/Surancebay Profile Completed & AML Training Modal -->
+            <div class="modal fade" id="SureLCSuranebayTrainingModal" tabindex="-1" aria-labelledby="SureLCSuranebayTrainingModal"
+              aria-hidden="true">
+              <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card bg-gray-200 shadow border-0 mb-0">
+                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                        <div class="bg-gradient-info shadow-info border-radius-lg py-3 pe-1 py-4 text-end">
+                          <button type="button" class="btn btn-link text-white my-1"
+                            data-bs-dismiss="modal">Close</button>
+                          <h4 class="font-weight-bolder text-white mt-1 mb-0 text-center ">SureLC/Surancebay Profile & AML Training Completed?</h4>
+                          <p class="mb-1 text-sm text-white text-center">Keep your Admin/Manager updated on your
+                            progress</p>
+                        </div>
+                      </div>
+                      <div id="contracting-form" class="card-body">
+                        <form id="surelc-surancebay-training-form" method="post">
+                          <div class="input-group input-group-static mb-4">
+                            <label>Name</label>
+                            <input type="name" class="form-control" id="surelc_surancebay_training_name" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
+                          </div>
+                          <div class="input-group input-group-static mb-4">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="surelc_surancebay_training_email" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Mark as
+                              Completed</button>
+                          </div>
+                          <div id="SureLCSuranebayTrainingSuccessMessage" class="text-center" style="display:none; color:green;">
+                            Thank you for updating us!
+                          </div>
+                          <div id="SureLCSuranebayTrainingErrorMessage" style="display:none; color:red;">
+                            Oops! Something went wrong. Please try again later.
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- NLC Onboarding Completed & Contracting Request Submitted Modal -->
+            <div class="modal fade" id="NLCOnboardingModal" tabindex="-1" aria-labelledby="NLCOnboardingModal"
+              aria-hidden="true">
+              <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card bg-gray-200 shadow border-0 mb-0">
+                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                        <div class="bg-gradient-info shadow-info border-radius-lg py-3 pe-1 py-4 text-end">
+                          <button type="button" class="btn btn-link text-white my-1"
+                            data-bs-dismiss="modal">Close</button>
+                          <h4 class="font-weight-bolder text-white mt-1 mb-0 text-center ">NLC Onboarding Completed & Contracting Request Submitted?</h4>
+                          <p class="mb-1 text-sm text-white text-center">Keep your Admin/Manager updated on your
+                            progress</p>
+                        </div>
+                      </div>
+                      <div id="contracting-form" class="card-body">
+                        <form id="nlc-onboarding-form" method="post">
+                          <div class="input-group input-group-static mb-4">
+                            <label>Name</label>
+                            <input type="name" class="form-control" id="nlc_onboarding_name" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
+                          </div>
+                          <div class="input-group input-group-static mb-4">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="nlc_onboarding_email" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Mark as
+                              Completed</button>
+                          </div>
+                          <div id="NLCOnboardingSuccessMessage" class="text-center" style="display:none; color:green;">
+                            Thank you for updating us!
+                          </div>
+                          <div id="NLCOnboardingErrorMessage" style="display:none; color:red;">
+                            Oops! Something went wrong. Please try again later.
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Contracting Completed & Agent Writing Numbers Issued Modal -->
+            <div class="modal fade" id="ContractingAgentNumbersModal" tabindex="-1" aria-labelledby="ContractingAgentNumbersModal"
+              aria-hidden="true">
+              <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                <div class="modal-content">
+                  <div class="modal-body p-0">
+                    <div class="card bg-gray-200 shadow border-0 mb-0">
+                      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                        <div class="bg-gradient-info shadow-info border-radius-lg py-3 pe-1 py-4 text-end">
+                          <button type="button" class="btn btn-link text-white my-1"
+                            data-bs-dismiss="modal">Close</button>
+                          <h4 class="font-weight-bolder text-white mt-1 mb-0 text-center ">Contracting Completed & Agent Writing Numbers Issued?
+                          </h4>
+                          <p class="mb-1 text-sm text-white text-center">Keep your Admin/Manager updated on your
+                            progress</p>
+                        </div>
+                      </div>
+                      <div id="contracting-agent-numbers-form" class="card-body">
+                        <form id="agent-resource-doc-form" method="post">
+                          <div class="input-group input-group-static mb-4">
+                            <label>Name</label>
+                            <input type="name" class="form-control" id="contracting_agent_numbers_name" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">person</i></span>
+                          </div>
+                          <div class="input-group input-group-static mb-4">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="contracting_agent_numbers_email" required>
+                            <span class="input-group-text"><i class="material-symbols-rounded">email</i></span>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" class="btn bg-gradient-info mt-4 mb-0">Mark as
+                              Completed</button>
+                          </div>
+                          <div id="ContractingAgentSuccessMessage" class="text-center" style="display:none; color:green;">
+                            Thank you for updating us!
+                          </div>
+                          <div id="ContractingAgentErrorMessage" style="display:none; color:red;">
+                            Oops! Something went wrong. Please try again later.
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -911,6 +1115,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script>
+    // Study Course Completed Modal Form Submit
     $(document).ready(function () {
       $("#study-course-form").on("submit", function (e) {
         e.preventDefault();
@@ -925,7 +1130,7 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
@@ -933,7 +1138,6 @@
             if (data.success) {
               $("#StudyCourseSuccessMessage").show();
               $("#MarkStudyCourseComplete").hide();
-              // MarkStudyCourseComplete
             } else {
               $("#StudyCourseErrorMessage").show();
             }
@@ -944,8 +1148,8 @@
         });
       });
     });
-  </script>
-  <script>
+
+    // Passed State Licensing Exam Modal Form Submit
     $(document).ready(function () {
       $("#state-licensing-form").on("submit", function (e) {
         e.preventDefault();
@@ -960,14 +1164,13 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
           success: function (data) {
             if (data.success) {
               $("#StateLicensingSuccessMessage").show();
-              // $("#MarkStudyCourseComplete").hide();
             } else {
               $("#StateLicensingErrorMessage").show();
             }
@@ -978,8 +1181,8 @@
         });
       });
     });
-  </script>
-  <script>
+    
+    // Applied for State License Modal Form Submit
     $(document).ready(function () {
       $("#apply-state-license-form").on("submit", function (e) {
         e.preventDefault();
@@ -994,14 +1197,13 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
           success: function (data) {
             if (data.success) {
               $("#ApplyStateLicenseSuccessMessage").show();
-              // $("#MarkStudyCourseComplete").hide();
             } else {
               $("#ApplyStateLicenseErrorMessage").show();
             }
@@ -1012,8 +1214,8 @@
         });
       });
     });
-  </script>
-  <script>
+
+    // Agent Resources Document is Shared Modal Form Submit
     $(document).ready(function () {
       $("#agent-resource-doc-form").on("submit", function (e) {
         e.preventDefault();
@@ -1028,14 +1230,13 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
           success: function (data) {
             if (data.success) {
               $("#AgentResourceDocSuccessMessage").show();
-              // $("#MarkStudyCourseComplete").hide();
             } else {
               $("#AgentResourceDocErrorMessage").show();
             }
@@ -1046,8 +1247,8 @@
         });
       });
     });
-  </script>
-  <script>
+
+    // Void Check & Direct Deposit Form Obtained by Agent Modal Form Submit
     $(document).ready(function () {
       $("#void-check-deposit-form").on("submit", function (e) {
         e.preventDefault();
@@ -1062,7 +1263,7 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
@@ -1080,8 +1281,8 @@
         });
       });
     });
-  </script>
-  <script>
+
+    // State License Approved Modal Form Submit
     $(document).ready(function () {
       $("#state-license-approve-form").on("submit", function (e) {
         e.preventDefault();
@@ -1096,7 +1297,7 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
@@ -1114,8 +1315,8 @@
         });
       });
     });
-  </script>
-  <script>
+
+    // NIPR Licensing Modal Form Submit
     $(document).ready(function () {
       $("#nipr-license-form").on("submit", function (e) {
         e.preventDefault();
@@ -1130,7 +1331,7 @@
 
         $.ajax({
           type: "POST",
-          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/dev/checklist", // Replace with your server-side script URL
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
           data: formData,
           dataType: "json",
           encode: true,
@@ -1148,9 +1349,143 @@
         });
       });
     });
+
+    // HCMS Account Set-up Modal Form Submit
+    $(document).ready(function () {
+      $("#hcms-account-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "HCMS Account Set-up Completed",
+          name: $("#hcms_account_name").val(),
+          email: $("#hcms_account_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#HCMSAccountSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#HCMSAccountErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#HCMSAccountErrorMessage").show();
+          }
+        });
+      });
+    });
+
+    // SureLC/Surancebay Profile Completed & AML Training
+    $(document).ready(function () {
+      $("#surelc-surancebay-training-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "SureLC/Surancebay Profile & AML Training Completed",
+          name: $("#surelc_surancebay_training_name").val(),
+          email: $("#surelc_surancebay_training_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#SureLCSuranebayTrainingSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#SureLCSuranebayTrainingErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#SureLCSuranebayTrainingErrorMessage").show();
+          }
+        });
+      });
+    });
+
+    // NLC Onboarding Completed & Contracting Request Submitted Modal Form Submit
+    $(document).ready(function () {
+      $("#nlc-onboarding-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "NLC Onboarding Completed & Contracting Request Submitted",
+          name: $("#nlc_onboarding_name").val(),
+          email: $("#nlc_onboarding_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#NLCOnboardingSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#NLCOnboardingErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#NLCOnboardingErrorMessage").show();
+          }
+        });
+      });
+    });
+
+    // Contracting Completed & Agent Writing Numbers Issued Modal Form Submit
+    $(document).ready(function () {
+      $("#contracting-agent-numbers-form").on("submit", function (e) {
+        e.preventDefault();
+
+        var formData = {
+          form: "Contracting Completed & Agent Writing Numbers Issued",
+          name: $("#contracting_agent_numbers_name").val(),
+          email: $("#contracting_agent_numbers_email").val()
+        };
+
+        console.log(formData)
+
+        $.ajax({
+          type: "POST",
+          url: "https://rokvlb4k0i.execute-api.us-east-2.amazonaws.com/prod/checklist", 
+          data: formData,
+          dataType: "json",
+          encode: true,
+          success: function (data) {
+            if (data.success) {
+              $("#ContractingAgentSuccessMessage").show();
+              // $("#MarkStudyCourseComplete").hide();
+            } else {
+              $("#ContractingAgentErrorMessage").show();
+            }
+          },
+          error: function (data) {
+            $("#ContractingAgentErrorMessage").show();
+          }
+        });
+      });
+    });
+
   </script>
-
-
 </body>
-
 </html>
